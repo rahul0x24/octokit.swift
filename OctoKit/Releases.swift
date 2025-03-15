@@ -30,7 +30,7 @@ public struct Release: Codable {
     public let prerelease: Bool
     public let createdAt: Date
     public let publishedAt: Date?
-    public let author: User
+    public let author: User?
 
     public init(id: Int,
                 url: URL,
@@ -47,7 +47,7 @@ public struct Release: Codable {
                 prerelease: Bool,
                 createdAt: Date,
                 publishedAt: Date?,
-                author: User) {
+                author: User?) {
         self.id = id
         self.url = url
         self.htmlURL = htmlURL
